@@ -3,7 +3,7 @@
     function fetch123() {
         var varos = document.getElementById('varos').value
         console.log(varos)
-        fetch(`http://api.weatherstack.com/current?access_key=4f562d8c7ca49bb5df3ef0ba5e272db0&query=${varos}`)
+        fetch(`https://api.weatherstack.com/current?access_key=4f562d8c7ca49bb5df3ef0ba5e272db0&query=${varos}`)
             .then(response => response.json())
             .then(data => {
                     console.log(data)
